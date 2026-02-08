@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Valentine 💖</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: white;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-top: 100px;
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        button {
+            background: white;
+            color: #ff4d6d;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        button:hover {
+            background: #ffe0e9;
+        }
+        #yesMessage {
+            display: none;
+            font-size: 2em;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hey ❤️</h1>
+    <p>From the moment I met you, my world changed...</p>
+    <p>Will you be my Valentine? 💕</p>
+
+    <button onclick="showLove()">YES 💖</button>
+
+    <div id="yesMessage">Yay!!! You just made me the happiest 💘</div>
+
+    <script>
+        function showLove() {
+            document.getElementById("yesMessage").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
