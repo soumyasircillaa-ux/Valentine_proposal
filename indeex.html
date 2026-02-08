@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Valentine 💖</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        h1 {
+            margin-top: 100px;
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        button {
+            background: white;
+            color: #ff4d6d;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 20px;
+        }
+        button:hover {
+            background: #ffe0e9;
+        }
+        #yesMessage {
+            display: none;
+            font-size: 2em;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hey💗</h1>
+    <p>Since you’re not asking, then I’ll ask you…</p>
+    <p>Will you be my Valentine? 😒</p>
+
+    <button onclick="showLove()">YES 💖</button>
+    <button id="noBtn" onmouseover="moveNo()">NO 💔</button>
+
+    <div id="yesMessage">
+        Yay! You had no Option! <br>
+        Happy Valentine’s Day ❤️
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById("yesMessage").style.display = "block";
+        }
+
+        function moveNo() {
+            const btn = document.getElementById("noBtn");
+            const x = Math.random() * (window.innerWidth - btn.offsetWidth);
+            const y = Math.random() * (window.innerHeight - btn.offsetHeight);
+            btn.style.position = "absolute";
+            btn.style.left = x + "px";
+            btn.style.top = y + "px";
+        }
+    </script>
+
+</body>
+</html>
